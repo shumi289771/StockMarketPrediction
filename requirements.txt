@@ -4,4 +4,4 @@ scikit-learn
 matplotlib
 tensorflow
 keras-tuner
-
+numpy
