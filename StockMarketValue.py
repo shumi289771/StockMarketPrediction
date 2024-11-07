@@ -28,8 +28,8 @@ class StockMarketValue:
         self.data.to_csv(filename)
         print(f"Données enregistrées dans {filename}")
 
-    def load_model_and_predict(self, model):
-        predictions = model.predict(self.data[['Close', 'EMA']].values)
+    def load_model_and_predict(self, model, window):
+        predictions = model.predict(window)
         self.data['Predictions'] = predictions
         print("Prédictions réalisées")
 
